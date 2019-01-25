@@ -1,0 +1,11 @@
+version: '3'
+services:
+  starter:
+    container_name: django-starter
+    build:
+      context: .
+    image: django-starter
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/starter-project/

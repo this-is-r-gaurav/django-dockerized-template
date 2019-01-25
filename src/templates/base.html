@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Gaurav">
+    <title>Starter Template {% block title %}{% endblock %}</title>
+    {% include 'base/css.html' %}
+    {% block pageCss %} {% endblock %}
+</head>
+<body>
+<header class="header-global">
+    {% include 'base/navbar.html' %}
+</header>
+{% block content %}{% endblock %}
+
+<footer>
+
+</footer>
+<!-- Core -->
+{% include 'base/js.html' %}
+{% block javascript %}{% endblock %}
+</body>
+</html>
