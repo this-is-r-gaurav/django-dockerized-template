@@ -1,6 +1,6 @@
 # DJANGO Starter Template
 
-This is the starter template for Django Projects mostly used By Me. If you want to just run it There is a two Way.
+This is the starter template for Django Projects mostly used by myself. 
 
 First of all clone this Repository to Your local systerm by issuing the command
 
@@ -16,7 +16,7 @@ First of all clone this Repository to Your local systerm by issuing the command
 
 Before proceding to making it work, first of all do some changes, The first step is necessary and all remaining step are not necessary:
 
-* Generate a secret key by issuing following Command in the console and Copy the text generated in the file ~/django-starter-template/src/starterTemplate/settings.py to SECRET_KEY variable.
+* Generate a secret key by issuing following Command in the console and Copy the text generated in the file `~/django-starter-template/src/starterTemplate/settings.py` to `SECRET_KEY` variable.
 
 ```
     ~$ python3 manage.py shell -c "from django.core.management import utils;print(utils.get_random_secret_key())"
@@ -26,10 +26,10 @@ Before proceding to making it work, first of all do some changes, The first step
 
 * If You are building a specific project then you might want to change the name of the project from starterTemplate to specific Project You can do this by changing following files:
 
-   * First of all change the name of starterTemplate directory in src directory to your project_name.
-   * Then in settings.py change following variable ROOT_URLCONF = 'starterTemplate.urls' to ROOT_URLCONF = 'yourProjectName.urls', WSGI_APPLICATION = 'starterTemplate.wsgi.application' to WSGI_APPLICATION = 'yourProjectName.wsgi.application'
-   * In wsgi.py file to os.environ.setdefault("DJANGO_SETTINGS_MODULE", "starterTemplate.settings") to os.environ.setdefault("DJANGO_SETTINGS_MODULE", "yourProjectName.settings")
-   * In manage.py file os.environ.setdefault("DJANGO_SETTINGS_MODULE", "starterTemplate.settings") to os.environ.setdefault("DJANGO_SETTINGS_MODULE", "yourProjectName.settings")
+   * First of all change the name of `starterTemplate` directory in `src` directory to `yourProjectName`.
+   * Then in `settings.py` change following variable `ROOT_URLCONF = 'starterTemplate.urls'` to `ROOT_URLCONF = 'yourProjectName.urls'`, `WSGI_APPLICATION = 'starterTemplate.wsgi.application'` to `WSGI_APPLICATION = 'yourProjectName.wsgi.application'
+   * In `wsgi.py` file  `os.environ.setdefault("DJANGO_SETTINGS_MODULE", "starterTemplate.settings")` to `os.environ.setdefault("DJANGO_SETTINGS_MODULE", "yourProjectName.settings")`
+   * In `manage.py` file `os.environ.setdefault("DJANGO_SETTINGS_MODULE", "starterTemplate.settings")` to `os.environ.setdefault("DJANGO_SETTINGS_MODULE", "yourProjectName.settings")`
 
 
 ## Run The Project(With Docker)
@@ -39,7 +39,7 @@ Before proceding to making it work, first of all do some changes, The first step
     ~/django-starter-template/$ docker-compose up -d starter
 ```
 
-Then open the url localhost:8000. Your Application will be running.
+Then open the url `localhost:8000`. Your Application will be running.
 
 ## Run the project(without docker)
 
@@ -51,6 +51,8 @@ Then open the url localhost:8000. Your Application will be running.
     ~/django-starter-template/$ cd src
     ~/django-starter-template/src/$ python3 manage.py runserver
 ```
+
+Then open the url `localhost:8000`. Your Application will be running.
 
 
 
