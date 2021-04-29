@@ -1,0 +1,21 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: soupsieve
+    versions:
+    - "2.1"
+    - "2.2"
+  - dependency-name: urllib3
+    versions:
+    - 1.26.3
+  - dependency-name: cachetools
+    versions:
+    - 4.2.1
+  - dependency-name: pytz
+    versions:
+    - "2020.5"
